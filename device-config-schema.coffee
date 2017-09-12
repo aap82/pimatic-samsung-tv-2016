@@ -1,17 +1,19 @@
 module.exports =
-  title: "Pimatic Flic Device Config Schemas"
   SamsungTV_2016:
-    title: "Flic Button"
+    title: "SamsungTV 2016 Models (and later) Switch Actuator config"
     type: "object"
     properties:
       ip_address:
         description:  "ip address for the samsung tv"
         type: "string"
-        default: 'none'
         required: yes
       mac_address:
         description: "The mac address of the samsung tv. This can be auto-populated"
         type: "string"
+      update_interval:
+        description: "Interval in seconds to check and update TV state"
+        type: "number"
+        default: 10
       ping_interval:
         description: "Ping interval in seconds to check if TV is on"
         type: "number"
