@@ -9,7 +9,10 @@ module.exports = (env) ->
   rq = require('request-promise')
 
 
-  getTVState = (url) => return rq(url, {json: yes, timeout: 500}).then((res) => return Promise.resolve(res)).catch(=> Promise.resolve(null))
+  getTVState = (url) =>
+    return rq(url, {json: yes, timeout: 500})
+      .then((res) => return Promise.resolve(res))
+      .catch(=> return Promise.resolve(null))
 
   sendKeyToTV = (ws_url, key, timeout=1000) =>
     return new Promise (resolve, reject) =>
@@ -80,7 +83,6 @@ module.exports = (env) ->
 
 
     _requestUpdate: =>
-      console.log 'requesting update'
       return Promise.resolve() if @isBusy
       getTVState(@tv_url).then (res) =>
         if res is null
