@@ -13,8 +13,4 @@ module.exports =
       update_interval:
         description: "Interval in seconds to check and update TV state"
         type: "number"
-        default: 10
-      ping_interval:
-        description: "Ping interval in seconds to check if TV is on"
-        type: "number"
-        default: 10
+        default: 15
