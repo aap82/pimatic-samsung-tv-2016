@@ -1,6 +1,5 @@
 module.exports = (env) ->
   plugin_name = "SamsungTV_2016"
-  _ = require './utils'
   Promise = env.require 'bluebird'
   assert = env.require 'cassert'
   WebSocket = require('ws')

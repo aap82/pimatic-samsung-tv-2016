@@ -1,32 +1,37 @@
 {
   "name": "pimatic-samsung-tv-2016",
-  "version": "0.1.0",
   "description": "Pimatic Plugin for 2016 version Samsung TVs",
-  "main": "samsung-tv-2016",
-  "configSchema": "samsung-tv-2016-config-schema.coffee",
+  "author": "ap",
+  "main": "samsung-tv-2016.coffee",
   "files": [
-    "utils",
     "README.md",
     "samsung-tv-2016-config-schema.coffee",
     "device-config-schema.coffee",
     "samsung-tv-2016.coffee"
   ],
+  "version": "0.2.0",
+  "homepage": "https://github.com/aap82/pimatic-samsung-tv-2016",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aap82/pimatic-samsung-tv-2016.git"
+  },
+  "license": "GPL-3.0",
+  "configSchema": "samsung-tv-2016-config-schema.coffee",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "wake_on_lan": "^0.0.4",
+    "ws": "^3.1.0"
+  },
   "keywords": [
     "pimatic",
     "samsung",
     "tv",
     "2016"
   ],
-  "author": "aap82",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/aap82/pimatic-samsung-tv-2016/issues"
-  },
-  "homepage": "https://github.com/aap82/pimatic-samsung-tv-2016#readme",
-  "dependencies": {
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1",
-    "wake_on_lan": "^0.0.4",
-    "ws": "^3.1.0"
   }
+
+
 }

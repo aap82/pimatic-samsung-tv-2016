@@ -5,6 +5,6 @@ module.exports =
     app_name:
       description: "App Name used during connection to TV. If this changed, then "
       type: "string"
-      default: "Pimatic"
+      default: "pimatic"
       required: yes
 
