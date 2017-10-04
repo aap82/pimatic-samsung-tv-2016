@@ -33,7 +33,7 @@ The **mac_address** option can be safely (and is highly encouraged) to be ignore
 The device itself will obtain it.   
 
 
-### Attribution
+## Attribution
 
 Special thank you to <a href="https://github.com/kyleaa">kyleaa</a> for doing all the real
 work with <a href="https://github.com/kyleaa/homebridge-samsungtv2016">homebridge-samsungtv2016</a>,
