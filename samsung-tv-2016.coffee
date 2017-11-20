@@ -45,6 +45,7 @@ module.exports = (env) ->
 
   class SamsungTV_2016_Switch extends env.devices.SwitchActuator
     _state: null
+
     @property 'mac_address',
       get: -> if @config.mac_address is '' then null else @config.mac_address
       set: (addr) -> @config.mac_address = addr
