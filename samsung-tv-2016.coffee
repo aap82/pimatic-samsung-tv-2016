@@ -1,4 +1,7 @@
 module.exports = (env) ->
+  Function::property = (prop, desc) ->
+    Object.defineProperty @prototype, prop, desc
+
   plugin_name = "SamsungTV_2016"
   Promise = env.require 'bluebird'
   assert = env.require 'cassert'
