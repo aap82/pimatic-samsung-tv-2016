@@ -9,7 +9,7 @@
     "device-config-schema.coffee",
     "samsung-tv-2016.coffee"
   ],
-  "version": "0.3.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/aap82/pimatic-samsung-tv-2016",
   "repository": {
     "type": "git",
